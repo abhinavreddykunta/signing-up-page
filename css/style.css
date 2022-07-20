@@ -1,0 +1,124 @@
+.parent{
+    background-color: blueviolet;
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+
+.child1{
+    background-color: lightblue;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    animation: first 5s;
+}
+
+
+.child2{
+    background-color: brown;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    animation: second 5s;
+}
+ 
+.child3{
+    background-color:chartreuse;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    animation: third 5s;
+}
+
+.child4{
+    background-color: cornflowerblue;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    animation: fourth 5s ;
+}
+
+.child5{
+    background-color: darkblue;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+}
+
+
+
+
+@keyframes first {
+   0%{
+    left:0%;
+    top: 0%;
+   } 
+
+   50%{
+    left: 80%;
+    top: 0%;
+   }
+
+   100%{
+    left: 0%;
+    top: 0%;
+   }
+}
+
+@keyframes second {
+    0%{
+        left: 0%;
+        top: 0%;
+        transform: translate(0% , 0%);
+    }
+
+    50%{
+        left: 0%;
+        top: 86%;
+    }
+
+    100%{
+        left: 0%;
+        top: 0%;
+        transform: translate(0% , 0%);
+    }
+}
+
+@keyframes third {
+    0%{
+        left: 0%;
+        top: 0%;
+        transform: translate(0% , 0%);
+    }
+
+    50%{
+        right: 0%;
+        bottom: 0%;
+        transform: translate(900% , 900%);
+    }
+
+    100%{
+        left: 0%;
+        top: 0%;
+        transform: translate(0% , 0%);
+    }
+}
+
+@keyframes fourth {
+    0%{
+        left: 0%;
+        top: 0%;
+    }
+    
+    50%{
+        left: 50%;
+        top: 50%;
+        transform: translate(50% , 50%);
+    }
+
+    100%{
+        left: 0%;
+        top: 0%;
+    }
+}
+
